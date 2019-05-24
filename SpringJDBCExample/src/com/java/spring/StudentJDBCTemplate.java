@@ -18,13 +18,13 @@ public class StudentJDBCTemplate implements StudentDAO{
         this.jdbcTemplate = new JdbcTemplate(ds);
     }
 
-    /*@Override
+    @Override
     public Student getStudent(Integer id) {
         String sql = "select * from student where id =?";
-        Student student = jdbcTemplate.query(sql, new BeanPropertyRowMapper<Student>(Student.class));
-        return null;
+        Student student = jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper<Student>(Student.class));
+        return student;
     }
-*/
+
     @Override
     public List<Student> getStudentList() {
         String sql = "select * from student";

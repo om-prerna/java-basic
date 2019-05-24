@@ -13,7 +13,7 @@ public interface StudentDAO{
     public void create(String name, Integer age);
 
     // method for fetching a record
-   // public Student getStudent(Integer id);
+    public Student getStudent(Integer id);
 
     // method for fetching a list of records
     public List<Student> getStudentList();

@@ -13,9 +13,9 @@ public class Application {
         StudentJDBCTemplate studentJDBCTemplate = (StudentJDBCTemplate) context.getBean("studentJDBCTemplate");
 
         System.out.println("------Records Creation--------" );
-        studentJDBCTemplate.create("abc", 11);
-        studentJDBCTemplate.create("def", 2);
-        studentJDBCTemplate.create("ghi", 15);
+        studentJDBCTemplate.create("jkl", 11);
+        studentJDBCTemplate.create("mno", 2);
+        studentJDBCTemplate.create("pqr", 15);
 
         System.out.println("------Listing Multiple Records--------" );
         List<Student> students = studentJDBCTemplate.getStudentList();
@@ -25,6 +25,13 @@ public class Application {
             System.out.print((" name:"+ st.getName()));
             System.out.println(" age:"+ st.getAge());
         }
+
+        System.out.println("------Listing Specific Records--------" );
+        Student st = studentJDBCTemplate.getStudent(1);
+        System.out.print("id:"+ st.getId());
+        System.out.print((" name:"+ st.getName()));
+        System.out.println(" age:"+ st.getAge());
+
 
     }
 }
