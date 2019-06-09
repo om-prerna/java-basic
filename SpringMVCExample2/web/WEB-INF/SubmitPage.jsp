@@ -18,7 +18,7 @@
     <tr><td>Student name: ${student.stName}</td></tr>
     <tr><td>Company Name: ${student.comName}</td></tr>
     <tr><td>Mobile No: ${student.mobileNo}</td></tr>
-    <tr><td>Date of birth: ${student.dob}/td></tr>
+    <tr><td>Date of birth: ${student.dob}</td></tr>
     <tr><td>Skills: ${student.skillSet}</td></tr>
     <tr><td>Address :</td>
             <td>
